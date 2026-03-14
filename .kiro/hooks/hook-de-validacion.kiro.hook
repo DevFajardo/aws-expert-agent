@@ -1,0 +1,15 @@
+{
+  "version": "1.0.0",
+  "enabled": true,
+  "name": "hook de validacion",
+  "when": {
+    "type": "fileEdited",
+    "patterns": [
+      "C:\\Users\\emman\\OneDrive\\Documentos\\mi-agente-aws\\tools.py"
+    ]
+  },
+  "then": {
+    "type": "askAgent",
+    "prompt": "Cuando se guarde tools.py, verificar que cada funcion decorada con @tool tenga: (1)\ndocstring con descripcion clara, (2) type hints en todos los parametros, (3) type hint en el\nvalor de retorno. Si falta alguno, mostrar una advertencia clara indicando que funcion\nnecesita correccion."
+  }
+}

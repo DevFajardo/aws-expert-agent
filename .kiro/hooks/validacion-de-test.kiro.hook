@@ -1,0 +1,15 @@
+{
+  "version": "1.0.0",
+  "enabled": true,
+  "name": "validacion de test",
+  "when": {
+    "type": "fileEdited",
+    "patterns": [
+      "C:\\Users\\emman\\OneDrive\\Documentos\\mi-agente-aws\\agent.py"
+    ]
+  },
+  "then": {
+    "type": "askAgent",
+    "prompt": "Cuando se guarde agent.py, generar o actualizar el archivo test_agent.py con pruebas\nunitarias para cada herramienta usando pytest. Las pruebas deben verificar que las\nherramientas devuelven el tipo correcto y manejan correctamente los inputs invalidos."
+  }
+}
